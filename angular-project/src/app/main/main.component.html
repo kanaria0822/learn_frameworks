@@ -1,0 +1,20 @@
+<p>main works!</p>
+<button (click)="getData()">get data</button>
+<p>{{data}}</p>
+<label>名前検索：</label>
+<input id="txtName" name="txtName" type="text" [(ngModel)]="name" />
+<!--2イベントハンドラーにテキストボックスへの入力値を引き渡す-->
+<!-- <input type="button" value="検索" (click)="onclick(name)" /> -->
+<p>{{name}}</p>
+<table class="table">
+    <tr>
+        <th>ID</th><th>名前</th>
+    </tr>
+    <tr *ngFor="let person of persons">
+        <ng-container *ngIf="person.name.includes(name)">
+        <td>{{person.id}}</td>
+        <td>{{person.name}}</td>
+        </ng-container>
+    </tr>
+
+</table>

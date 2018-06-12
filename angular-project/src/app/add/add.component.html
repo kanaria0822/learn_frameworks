@@ -1,0 +1,12 @@
+<p>add works!</p>
+
+<form>
+  <label>ID：</label>
+  <input id="txtId" name="txtId" type="text" #id />
+  <label>名前：</label>
+  <!--1テキストボックスtxtNameを変数nameでアクセスできるように-->
+  <input id="txtName" name="txtName" type="text" #name />
+  <!--2イベントハンドラーにテキストボックスへの入力値を引き渡す-->
+  <input type="button" value="送信" (click)="onclick(name.value, id.value)" />
+  <div>{{msg}}</div>
+</form>

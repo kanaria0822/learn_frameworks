@@ -1,0 +1,10 @@
+<p>
+  delete works!
+</p>
+<form>
+  <label>ID：</label>
+  <input id="txtId" name="txtId" type="text" #id />
+  <!--2イベントハンドラーにテキストボックスへの入力値を引き渡す-->
+  <input type="button" value="送信" (click)="onclick(id.value)" />
+  <div>{{msg}}</div>
+</form>
