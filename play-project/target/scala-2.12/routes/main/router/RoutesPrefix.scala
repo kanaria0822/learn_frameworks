@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/shuto/Desktop/Goalist/prac/play-project/conf/routes
-// @DATE:Fri Jun 08 14:05:22 JST 2018
+// @DATE:Mon Jun 11 19:31:17 JST 2018
 
 
 package router {
